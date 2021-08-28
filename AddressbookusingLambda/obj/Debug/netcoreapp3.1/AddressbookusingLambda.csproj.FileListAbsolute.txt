@@ -1,0 +1,13 @@
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\bin\Debug\netcoreapp3.1\AddressbookusingLambda.exe
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\bin\Debug\netcoreapp3.1\AddressbookusingLambda.deps.json
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\bin\Debug\netcoreapp3.1\AddressbookusingLambda.runtimeconfig.json
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\bin\Debug\netcoreapp3.1\AddressbookusingLambda.runtimeconfig.dev.json
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\bin\Debug\netcoreapp3.1\AddressbookusingLambda.dll
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\bin\Debug\netcoreapp3.1\AddressbookusingLambda.pdb
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug\netcoreapp3.1\AddressbookusingLambda.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug\netcoreapp3.1\AddressbookusingLambda.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug\netcoreapp3.1\AddressbookusingLambda.AssemblyInfo.cs
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug\netcoreapp3.1\AddressbookusingLambda.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug\netcoreapp3.1\AddressbookusingLambda.dll
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug\netcoreapp3.1\AddressbookusingLambda.pdb
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug\netcoreapp3.1\AddressbookusingLambda.genruntimeconfig.cache
