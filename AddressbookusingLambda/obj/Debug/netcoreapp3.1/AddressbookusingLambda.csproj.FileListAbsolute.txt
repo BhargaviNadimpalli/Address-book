@@ -13,3 +13,5 @@ C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug
 C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug\netcoreapp3.1\AddressbookusingLambda.genruntimeconfig.cache
 C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\bin\Debug\netcoreapp3.1\CsvHelper.dll
 C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\obj\Debug\netcoreapp3.1\AddressbookusingLambda.csproj.CopyComplete
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\bin\Debug\netcoreapp3.1\Json.Net.dll
+C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
