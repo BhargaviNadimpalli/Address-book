@@ -43,6 +43,14 @@
             "CsvHelper": {
               "target": "Package",
               "version": "[27.1.1, )"
+            },
+            "Json.Net": {
+              "target": "Package",
+              "version": "[1.0.33, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

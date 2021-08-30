@@ -1,4 +1,5 @@
 ﻿using CsvHelper;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -650,7 +651,7 @@ namespace AddressbookusingLambda
         public void ReadFromCsvFile()
         {
             //File path
-            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.txt";
+            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.csv";
             try
             {
                 string abName = "Ab-TN";
@@ -678,7 +679,7 @@ namespace AddressbookusingLambda
         public void WriteToCsvFile()
         {
             //File path of csv file
-            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.txt";
+            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.csv";
             try
             {
                 if (File.Exists(filePath))
@@ -714,6 +715,78 @@ namespace AddressbookusingLambda
             {
                 Console.WriteLine($"Exception: {ex.Message}");
             }
+        }
+        public void ReadFromJsonFile()
+        {
+            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.Json";
+            try
+            {
+                string abName = "AB-bhagi";
+                if (File.Exists(filePath))
+                {
+                    // convert json records to list
+                    List<Person> jsonList = JsonConvert.DeserializeObject<List<Person>>(File.ReadAllText(filePath));
+                    addressBookDictionary.Add(abName, jsonList);
+                    Console.WriteLine("Data added succesfully");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception: {ex.Message}");
+            }
+
+
+        }
+        /// <summary>
+        /// Write records into json file
+        /// </summary>
+        public void WriteToJsonFile()
+        {
+            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.Json";
+            try
+            {
+
+                if (addressBookDictionary.Count > 0)
+                {
+                    //initially clear the file
+                    File.WriteAllText(filePath, string.Empty);
+
+                    //Initialising json serializer
+                    JsonSerializer serializer = new JsonSerializer();
+                    using (StreamWriter writer = new StreamWriter(filePath))
+                    using (JsonWriter jsonWriter = new JsonTextWriter(writer))
+                    {
+                        foreach (KeyValuePair<string, List<Person>> dict in addressBookDictionary)
+                        {
+                            //initialising contacts list
+                            contacts = new List<Person>();
+                            foreach (var addressBook in dict.Value)
+                            {
+
+                                contacts.Add(addressBook);
+
+                            }
+                            //write records into json file
+                            serializer.Serialize(jsonWriter, contacts);
+                        }
+                    }
+                    Console.WriteLine("Records Written into json file");
+                }
+                else
+                {
+                    Console.WriteLine("Address Book is Empty");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception: {ex.Message}");
+            }
+
+
         }
     }
 }
