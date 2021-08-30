@@ -506,27 +506,64 @@ namespace AddressbookusingLambda
             }
 
         }
-        public void SortList()
+        public void SortEntries()
         {
-            if (addressBookDictionary.Count > 0)
+            Console.WriteLine("1.Sort by person name\n2.Sort by city name\n3.Sort by state name\n4.Sort by zipcode\nEnter Your option");
+            switch (Convert.ToInt32(Console.ReadLine()))
             {
+                case 1:
+                    SortList("name");
+                    break;
+                case 2:
+                    SortList("city");
+                    break;
+                case 3:
+                    SortList("state");
+                    break;
+                case 4:
+                    SortList("zipcode");
+                    break;
 
-                //printing the values in address book
-                foreach (KeyValuePair<string, List<Person>> dict in addressBookDictionary)
+            }
+        }
+
+            public void SortList(string check)
+            {
+                if (addressBookDictionary.Count > 0)
                 {
-                    //sorting list based on first name
-                    SortedList = dict.Value.OrderBy(x => x.firstName).ToList();
-                    Console.WriteLine($"**********AFTER SORTING {dict.Key}**********");
-                    foreach (var addressBook in SortedList)
+
+                    //printing the values in address book
+                    foreach (KeyValuePair<string, List<Person>> dict in addressBookDictionary)
                     {
-                        PrintValues(addressBook);
+                        switch (check)
+                        {
+                            case "name":
+                                //sorting list based on first name
+                                SortedList = dict.Value.OrderBy(x => x.firstName).ToList();
+                                break;
+                            case "city":
+                                SortedList = dict.Value.OrderBy(x => x.city).ToList();
+                                break;
+                            case "state":
+                                SortedList = dict.Value.OrderBy(x => x.state).ToList();
+                                break;
+                            case "zipcode":
+                                SortedList = dict.Value.OrderBy(x => x.zipCode).ToList();
+                                break;
+                        }
+
+                        Console.WriteLine($"**********AFTER SORTING {dict.Key}**********");
+                        foreach (var addressBook in SortedList)
+                        {
+                            PrintValues(addressBook);
+                        }
                     }
                 }
-            }
-            else
-            {
-                Console.WriteLine("Address Book is Empty");
+                else
+                {
+                    Console.WriteLine("Address Book is Empty");
+                }
+
             }
         }
     }
-}
