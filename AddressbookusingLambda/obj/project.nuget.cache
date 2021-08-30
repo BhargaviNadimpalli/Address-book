@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jvh+0d31hiTwWAgeSmeVx/wNEFVwAdkXyCCw4zHK2LJ3ywDYscrYbfKY07jwDF3iHuKd3W1qQQAFtGvs+d9k+g==",
+  "dgSpecHash": "EU8BXsAfP0R85e6NxmiJRzIqz76ZFNtJnzn/i2G0A8Ahqz8nzK7OlSU2fp/cmSYSfZy352KXBqYu+mq6woKeOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\source\\repos\\AddressbookusingLambda\\AddressbookusingLambda\\AddressbookusingLambda.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
