@@ -650,7 +650,7 @@ namespace AddressbookusingLambda
         public void ReadFromCsvFile()
         {
             //File path
-            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.txt";
+            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.csv";
             try
             {
                 string abName = "Ab-TN";
@@ -678,7 +678,7 @@ namespace AddressbookusingLambda
         public void WriteToCsvFile()
         {
             //File path of csv file
-            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.txt";
+            string filePath = @"C:\Users\HP\source\repos\AddressbookusingLambda\AddressbookusingLambda\Details.csv";
             try
             {
                 if (File.Exists(filePath))
