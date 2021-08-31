@@ -42,7 +42,7 @@ namespace AddressbookusingLambda
                         abd.CountByStateOrCity();
                         break;
                     case 8:
-                        abd.SortList();
+                        abd.Sortentries();
                         break;
                     default:
                         // to exit from main method
